@@ -117,12 +117,12 @@ You must now implement the `play_game` method in the `Game` class. The `play_gam
 - `play_game(self)` - a method that starts the game. The game should continue until a player has no cards left in their hand. The method should return a reference to the player who won the game. You should utilise the methods defined above to achieve this method's purpose. Please remember the rules of the game! Here is a summary of the rules:
     - The player with the lowest position in the collection goes first.
       - Eg the element at the front of the queue, top of the stack, 0th index of the array, etc.
-    - In our version of the game, we will player cards starting at index 0 and moving to the right.
+    - In our version of the game, we will be playing cards starting at index 0 and moving to the right.
     - The game ends when 1 player has no cards left in their hand.
       - The only circumstance for a game to momentarily continue is if the final card played is a Draw Two or Draw Four card, the next player must draw the appropriate number of cards before the game ends.
       - You will **not** have to consider a situation where the game ends in a draw as players have no available moves or cards to draw. All games tested will have a single winner.
     - A player can only play a card if that card has the same color or the same label as the top card of the discard pile. Alternatively, a Crazy card, or a Crazy Draw Four card can be played over any other card.
-    - If a player cannot play a card, they must draw a card from the `draw_pile`. If that card can be played, they may play it. Otherwise, they keep the card and the turn moves to the next player.
+    - If a player cannot play a card, they must draw a card from the `draw_pile`. If that card can be played, they must play it. Otherwise, they keep the card and the turn moves to the next player.
     - If a player plays a draw two card, the next player must draw two cards from the Draw Pile and cannot play either of them. The next player's turn is also skipped. For example - if Bob plays Draw 2 and Charlie is the next player, Charlie must draw 2 cards from the `draw_pile` and cannot play either of them. Charlie's turn is then skipped.
     - Remember, if the draw pile is empty, the discard pile (except the top card) is shuffled and placed in the draw pile. The top card of the discard pile is then placed back on top of the discard pile. This must be done by:
         - removing the top card of the discard pile and storing it elsewhere
