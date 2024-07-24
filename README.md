@@ -99,7 +99,7 @@ Now that you have the basic structure of the game, it is time to implement the g
 
 - `draw_card(self, player: Player, playing: bool)` - a method that takes a `Player` object as an argument and draws a `Card` object from the `draw_pile`. If the card can be played and the `playing` argument is `True`, the card should be returned. Otherwise, the card should be added to the player's hand and the method should return `None`. This method should be called multiple times if the special card is a Draw 2 or Draw 4.
 
-- `next_player(self)` - a method that gets the Player object of the next player (note: if `current_player` is `None`, this should simply return the `Player` with the lowest position). This will be helpful when you are making the next player draw cards. The method should return the `Player` object of the next player. This method should NOT update the `current_player` of the game object. This method should merely probe the next player in the order of the players.
+- `next_player(self)` - a method that gets the Player object of the next player (note: if `current_player` is `None`, this should simply return the Player to play the next turn). This will be helpful when you are making the next player draw cards. The method should return the `Player` object of the next player. This method should NOT update the `current_player` of the game object. This method should merely probe the next player in the order of the players.
 
 - `play_reverse(self)` - a method that changes the direction of play. If the direction of play is clockwise, it should be changed to anti-clockwise, and vice versa. The method should return `None`.
 
