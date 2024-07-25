@@ -72,11 +72,11 @@ You have been given some code in file `game.py`. You must now modify it to imple
 
 - `discard_pile` - a collection of `Card` objects representing the cards already played in the game. When initialising the `Game` object, this collection should be empty.
 
-- `current_player` - a `Player` object representing the player whose turn it is to play. When initialising the `Game` object, this collection should be empty.
+- `current_player` - a `Player` object representing the player whose turn it is to play. When initialising the `Game` object, this object should be empty.
 
-- `current_color` - an `enum` value representing the color of the top card of the `discard_pile`. When initialising the `Game` object, this collection should be empty.
+- `current_color` - an `enum` value representing the color of the top card of the `discard_pile`. When initialising the `Game` object, this object should be empty.
 
-- `current_label` - an `enum` value representing the label of the top card of the `discard_pile`. When initialising the `Game` object, this collection should be empty.
+- `current_label` - an `enum` value representing the label of the top card of the `discard_pile`. When initialising the `Game` object, this object should be empty.
 
 - `initialise_game(self, players: ArrayR)` - This method performs the following tasks:
     1. Use the array of `Player` objects being passed to this method to populate the `players` attribute of the `Game` object.
