@@ -45,7 +45,7 @@ class TestGame(TestCase):
         Constants.NUM_CARDS_AT_INIT = 7
         game: Game = Game()
         game.initialise_game(self.players[0:3])
-        self.assertLessEqual(len(game.draw_pile), 97, f"There should be at most 97 cards in the unused pile, but there are {len(game.draw_pile)}")
+        self.assertLessEqual(len(game.draw_pile), 90, f"There should be at most 90 cards in the unused pile, but there are {len(game.draw_pile)}")
         self.assertGreaterEqual(len(game.discard_pile), 1, f"There should be at least 1 card in the discard pile, but there are {len(game.discard_pile)}")
         self.assertNotEqual(game.current_color, None, f"current_color should not be None after initialising the game")
         self.assertNotEqual(game.current_label, None, f"current_label should not be None after initialising the game")
