@@ -59,9 +59,9 @@ class TestGame(TestCase):
         game.initialise_game(self.players)
 
         # Check the first card in the unused pile
-        self.assertEqual(game.draw_pile.array[0].color, CardColor.BLUE, f"First card in unused pile should be RED, but is {game.draw_pile.array[0].color}")
-        self.assertEqual(game.draw_pile.array[0].label, CardLabel.DRAW_TWO, f"First card in unused pile should be ZERO, but is {game.draw_pile.array[0].label}")
+        self.assertEqual(game.draw_pile.array[0].color, CardColor.BLUE, f"First card in unused pile should be BLUE, but is {game.draw_pile.array[0].color}")
+        self.assertEqual(game.draw_pile.array[0].label, CardLabel.DRAW_TWO, f"First card in unused pile should be DRAW_TWO, but is {game.draw_pile.array[0].label}")
 
         # Check the first card in the hand of the first player
         self.assertEqual(game.players.array[0].hand[0].color, CardColor.RED, f"First card in first player's hand should be RED, but is {game.players.array[0].hand[0].color}")
-        self.assertEqual(game.players.array[0].hand[0].label, CardLabel.ZERO, f"First card in first player's hand should be FIVE, but is {game.players.array[0].hand[0].label}")
+        self.assertEqual(game.players.array[0].hand[0].label, CardLabel.ZERO, f"First card in first player's hand should be ZERO, but is {game.players.array[0].hand[0].label}")
