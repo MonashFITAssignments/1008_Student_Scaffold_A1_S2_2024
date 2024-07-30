@@ -10,7 +10,7 @@ The card game involves multiple players and a deck of cards. The objective is to
 ## Important Restrictions and Assumptions
 
 - You cannot use any built-in data structures or algorithms from any libraries except the ones provided to you in the scaffold (and no, you cannot modify the code for these data structure either).
-- This means that the use of python in-built lists, dictionaries, tuples, and sets (among other built in data structures) is forbidden.
+- This means that the use of python in-built lists, dictionaries, tuples, and sets (among other built in data structures) is forbidden. - This means that the use of python in-built lists, dictionaries, tuples, and sets (among other built in data structures) is forbidden. In addition to this ArrayR is also prohibited usage of this unless provided by the scaffold will result in a penalty in approach marks.
 - You cannot use any built-in sorting algorithms. You must use one of the sorting algorithms given to you in the scaffold OR use a data structure that facilitates sorting algorithms.
 - You cannot use generative AI, machine learning, or any other form of AI software.
 - You cannot use any hard coded constants apart from the ones provided to you in the constants class. If you need to use a constant, please add it to the constants class.
@@ -52,13 +52,16 @@ You must also modify file `player.py` to implement the `Player` class with the f
 
 - `name` - a string representing the name of the player.
 - `position` - an integer representing the position of the player in the game. The player with the lowest position goes first. Positions start at 0.
-- `hand` - a ordered collection of `Card` objects representing the cards in the player's hand. This list must be ordered by color of the card, then by card label in an increasing order according to the enum values. If the card has the same color and label, then consider the first card added to the hand to be the one with the lower index.
+- `hand` - a ordered collection of `Card` objects representing the cards in the player's hand. This list must be ordered by color of the card, then by card label in an increasing order according to the enum values. If the card has the same color and label, then consider the first card added to the hand to be the one with the lower index*.
 - `add_card(self, card: Card)` - a method that takes a `Card` object as an argument and adds it to the hand. The method should return `None`. Assume that the card being passed is a valid card.
 - `play_card(self, index: int)` - a method that takes an integer as an argument and removes the card at the given index from the player's hand. The method should return the card that was removed from the player's hand.
 - `len(self)` - a method that returns the number of cards in the player's hand.
 - `getitem(self, index: int)` - a method that takes an integer as an argument and returns the card at the given index in the player's hand.
 
 **NOTE - For both of these classes, please add additional helper methods if you think they are necessary (including a `__str__` method to help with debugging).**
+
+* Our test cases will never check the order of cards with the same color and label. 
+
 
 ## Task 2 - The Game Class
 
