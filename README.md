@@ -60,7 +60,7 @@ You must also modify file `player.py` to implement the `Player` class with the f
 
 **NOTE - For both of these classes, please add additional helper methods if you think they are necessary (including a `__str__` method to help with debugging).**
 
-* Our test cases will never check the order of cards with the same color and label. 
+\* Our test cases will never check the order of cards with the same color and label. 
 
 
 ## Task 2 - The Game Class
